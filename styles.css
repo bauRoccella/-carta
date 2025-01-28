@@ -1,0 +1,55 @@
+/* Removemos márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Hacemos que el body se ajuste al 100% de la ventana */
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Canvas de fondo en posición fija para que ocupe toda la pantalla */
+  #bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Para que quede detrás del contenido */
+    display: block;
+    background-color: #ffd1dc; /* Rosa pastel */
+  }
+  
+  .espacio-vacio {
+    height: 100vh; /* 1 pantalla de alto */
+  }
+  
+
+  /* Contenedor principal que simula la carta en HTML */
+  .carta-contenedor {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(255, 248, 231, 0.8);
+    padding: 30px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo del título */
+  h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Georgia, serif;
+  }
+  
+  /* Estilo del texto */
+  p {
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 16px;
+  }
+  
